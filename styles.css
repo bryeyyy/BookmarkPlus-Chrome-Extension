@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    font-family: 'Manrope', sans-serif;
+}
+button{
+    background: none;
+    border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #59595e;
+    border-radius: 10px;
+  }
+
+.title{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+}
+.maincard{
+    background-color: rgb(217, 229, 231);
+    padding: 40px 40px 25px 40px !important;
+    min-width: 400px;
+    height: 600px;
+    position: relative;
+    backdrop-filter: blur(10px) ;
+}
+.inputarea{
+    padding: 10px 10px 10px 10px !important;
+}
+#inputEl{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    border: solid black 1px;
+}
+.btnarea{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+#submitinput, #submittab{
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    transition: ease 0.1s;
+    width: 150px;
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+#submitinput:active, #submittab:active{
+    scale: 0.9;
+}
+#submitinput{
+    border: solid black 1px;
+}
+#submittab{
+    background-color: #6cbd2a;
+}
+#bookmarkarea{
+    display: flex;
+    overflow-y: scroll;
+    margin: 35px 0 35px 0;
+    height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: flex-start;
+    text-align: center;
+    justify-content: center;
+}
+.delbtn{
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    color: rgb(255, 0, 0);
+    margin: 0;
+    font-weight: bold;
+}
+#bookmarkarea > a{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    height: max-content; 
+    width: 300px;
+    text-align: center;
+    color: #6cbd2a;
+    font-weight: bold;
+    word-wrap: break-word; 
+    transition: ease 0.2s;
+}
+#bookmarkarea > a:hover{
+    background-color: #6cbd2a;
+    color: black;
+}
